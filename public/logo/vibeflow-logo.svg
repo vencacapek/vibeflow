@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <style>
+      @import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,600&amp;display=swap');
+      .vibe {
+        font-family: 'General Sans', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        fill: #ffffff; /* Bílá varianta pro dark mode */
+        letter-spacing: -1px;
+      }
+      .flow {
+        font-family: 'General Sans', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        fill: #2563eb; /* Zachován brandový accent */
+        letter-spacing: -2px;
+      }
+    </style>
+  </defs>
+  
+  <text x="10" y="45">
+    <tspan class="vibe">vibe</tspan><tspan class="flow">flow</tspan>
+  </text>
+</svg>
