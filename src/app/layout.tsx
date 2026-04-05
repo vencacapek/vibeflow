@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function RootLayout({
             <p className="text-gray-600">Provozovatel: Václav Čapek, Lipenská, 370 01 České Budějovice. IČ: 87374366. Fyzická osoba zapsaná v živnostenském rejstříku.</p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
