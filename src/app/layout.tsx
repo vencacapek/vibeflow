@@ -3,8 +3,11 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Václav Čapek - Vibecoder & Web Developer",
+  title: "Vibeflow | Tvorba webů",
   description: "Osobní portfolio a blog Václava Čapka, vibecodera z Jižních Čech tvořícího moderní weby.",
+  icons: {
+    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>",
+  },
 };
 
 export default function RootLayout({
