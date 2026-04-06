@@ -1,13 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex-1">
       {/* 1. Hero sekce */}
-      <section 
-        className="min-h-[85vh] flex items-center justify-center relative overflow-hidden bg-cover bg-[center_top]"
-        style={{ backgroundImage: 'url("/images/hero-bg.webp")' }}
-      >
+      <section className="min-h-[85vh] flex items-center justify-center relative overflow-hidden">
+        {/* Pozadí přes Next.js Image s vysokou prioritou pro FCP/LCP od Google */}
+        <Image 
+          src="/images/hero-bg.webp" 
+          alt="Vibeflow pozadí"
+          fill
+          priority
+          className="object-cover object-[center_top] -z-10"
+        />
+        
         {/* Tmavý overlay */}
         <div 
           className="absolute inset-0 z-0 pointer-events-none" 
